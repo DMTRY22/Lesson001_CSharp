@@ -75,7 +75,38 @@
 
 // Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
 
-Console.Clear();
-int num = new Random().Next(100, 1000);
-int secondNumber = num / 10 % 10;
-Console.WriteLine($"Вторая цифра в числе {num} -> {secondNumber}");
+// Console.Clear();
+// int num = new Random().Next(100, 1000);
+// int secondNumber = num / 10 % 10;
+// Console.WriteLine($"Вторая цифра в числе {num} -> {secondNumber}");
+
+// Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+
+// Console.Clear();
+// Console.WriteLine("Введите число: ");
+// int num = int.Parse(Console.ReadLine());
+// if (num < 100)
+// {
+//     Console.WriteLine($"Третьей цифры нет");
+// return;
+// }
+// int thirdNumber = num % 10;
+// Console.WriteLine($"Третья цифра числа {num} -> {thirdNumber}");
+
+// Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+
+// Console.Clear();
+// Console.WriteLine("Введите число: ");
+// int num = int.Parse(Console.ReadLine());
+// if (num > 7 || num < 1)
+// {
+//     Console.WriteLine("неверный день недели");
+// }
+// if (num > 5)
+// {
+//     Console.WriteLine("да");
+// }
+// else
+// {
+//     Console.WriteLine("нет");
+// }
