@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\git семинар\C#\Lesson1_C\bin\Debug\net6.0\Lesson1_C.exe
+C:\Users\user\Desktop\git семинар\C#\Lesson1_C\bin\Debug\net6.0\Lesson1_C.deps.json
+C:\Users\user\Desktop\git семинар\C#\Lesson1_C\bin\Debug\net6.0\Lesson1_C.runtimeconfig.json
+C:\Users\user\Desktop\git семинар\C#\Lesson1_C\bin\Debug\net6.0\Lesson1_C.dll
+C:\Users\user\Desktop\git семинар\C#\Lesson1_C\bin\Debug\net6.0\Lesson1_C.pdb
+C:\Users\user\Desktop\git семинар\C#\Lesson1_C\obj\Debug\net6.0\Lesson1_C.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\git семинар\C#\Lesson1_C\obj\Debug\net6.0\Lesson1_C.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\git семинар\C#\Lesson1_C\obj\Debug\net6.0\Lesson1_C.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\git семинар\C#\Lesson1_C\obj\Debug\net6.0\Lesson1_C.AssemblyInfo.cs
+C:\Users\user\Desktop\git семинар\C#\Lesson1_C\obj\Debug\net6.0\Lesson1_C.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\git семинар\C#\Lesson1_C\obj\Debug\net6.0\Lesson1_C.dll
+C:\Users\user\Desktop\git семинар\C#\Lesson1_C\obj\Debug\net6.0\refint\Lesson1_C.dll
+C:\Users\user\Desktop\git семинар\C#\Lesson1_C\obj\Debug\net6.0\Lesson1_C.pdb
+C:\Users\user\Desktop\git семинар\C#\Lesson1_C\obj\Debug\net6.0\Lesson1_C.genruntimeconfig.cache
+C:\Users\user\Desktop\git семинар\C#\Lesson1_C\obj\Debug\net6.0\ref\Lesson1_C.dll
