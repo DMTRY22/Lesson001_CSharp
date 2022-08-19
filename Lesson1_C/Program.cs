@@ -110,3 +110,60 @@
 // {
 //     Console.WriteLine("нет");
 // }
+
+// ДЗ по третьей лекции
+
+// Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+
+// void palindrome(double a)
+// {
+//     if (a < 0)
+//     {
+//         a = Math.Abs(a);
+//     }
+//     if (a % 1 > 0)
+//     {
+//     Console.WriteLine("insert not integer");
+//     }
+//     else if (a < 10000 || a > 99999)
+//         {
+//     Console.WriteLine("enter not five digit number");
+//         }
+//     else if (Math.Floor(a / 1000) == a % 10 * 10 + Math.Floor(a % 100 / 10))
+//         {
+//     Console.WriteLine("yes");
+//         }
+//     else
+//         {
+//     Console.WriteLine("no");
+//         }
+//     }
+
+// Console.Write("enter five digit number:");
+// double number = Convert.ToDouble(Console.ReadLine());
+// palindrome(number);
+
+// Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+
+void distance(double a, double b, double c, double d, double e, double f);
+{
+    Console.WriteLine($"расстояние между точками равно {Math.Round(Math.Sqrt(Math.Pow(a - d, 2) + Math.Pow(b - e, 2) + Math.Pow(c - f, 2)), 2)}");
+
+}
+Console.WriteLine("введите координаты двух точек в 3D");
+
+Console.WriteLine("x первой точки");
+double xa = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("y первой точки");
+double ya = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("z первой точки");
+double za = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("x первой точки");
+double xb = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("y первой точки");
+double xb = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("z первой точки");
+double xb = Convert.ToDouble(Console.ReadLine());
+
+distance(xa, ya, za, xb, yb, zb);
