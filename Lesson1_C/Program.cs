@@ -167,3 +167,44 @@
 // double xb = Convert.ToDouble(Console.ReadLine());
 
 // distance(xa, ya, za, xb, yb, zb);
+
+
+// ДЗ по четвертой лекции.
+
+// Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+
+// Console.Clear();
+
+// Console.Write("enter number:");
+// int A = int.Parse(Console.ReadLine());
+// Console.Write("enter number:");
+// int B = int.Parse(Console.ReadLine());
+
+// Console.WriteLine($"{A} extent {B} = {Pow(A,B)}");
+
+// int Pow(int num, int rank)
+// {
+//     if(rank==0) return 1;
+//     int result = num;
+//     for (int i = 2; i <= rank; i++)
+//     {
+//         result *= num; 
+//     }
+//     return result;
+// }
+
+
+// Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+
+// void sumDigits(int number);
+// {
+//     Console.WriteLine($"sum сумма всех чисел {number} = ");
+//     int sum = 0;
+//     while(number > 0)
+//     {
+//         sum += number % 10;
+//         number /= 10;
+//     }
+//     Console.WriteLine($"{sum}");
+// }
+// sumDigits(numbers);
