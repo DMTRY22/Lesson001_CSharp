@@ -493,3 +493,298 @@
 // x = average / m;
 // return x;
 // }
+
+
+
+// ДЗ по восьмой лекции.
+
+
+// Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
+
+// Console.Clear();
+// Console.WriteLine("Введите размер массива m, x, n и диапазон случайных значений:");
+// int m = InputNumbers("Введите m: ");
+// int n = InputNumbers("Введите n: ");
+// int range = InputNumbers("Введите диапазон: от 1 до 100");
+
+// int[,] array = new int[m, n];
+// CreateArray(array);
+// WriteArray(array);
+
+// Console.WriteLine("Отсортированный массив: ");
+// OrderArrayLines(array);
+// WriteArray(array);
+
+// void OrderArrayLines(int[,] array)
+// {
+//  for (int i = 0; i < array.GetLength(0); i++)
+// {
+//  for (int j = 0; j < array.GetLength(1); j++)
+// {
+//  for (int k = 0; k < array.GetLength(1) - 1; k++)
+// {
+//  if (array[i, k] < array[i, k + 1])
+// {
+// int temp = array[i, k + 1];
+// array[i, k + 1] = array[i, k];
+// array[i, k] = temp;
+// }
+// }
+// }
+// }
+// }
+
+// int InputNumbers(string input)
+// {
+// Console.Write(input);
+// int output = Convert.ToInt32(Console.ReadLine());
+// return output;
+// }
+
+// void CreateArray(int[,] array)
+// {
+// for (int i = 0; i < array.GetLength(0); i++)
+// {
+// for (int j = 0; j < array.GetLength(1); j++)
+// {
+// array[i, j] = new Random().Next(range);
+// }
+// }
+// }
+
+// void WriteArray(int[,] array)
+// {
+// for (int i = 0; i < array.GetLength(0); i++)
+// {
+// for (int j = 0; j < array.GetLength(1); j++)
+// {
+// Console.Write(array[i, j] + " ");
+// }
+// Console.WriteLine();
+// }
+// }
+
+
+// Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
+
+// Console.Clear();
+// Console.WriteLine("введите размер массива: ");
+// int massVol = Convert.ToInt32(Console.ReadLine());
+// int[,] numbers = new int[massVol, massVol];
+// FillArrayRandomNumbers(numbers);
+// PrintArray(numbers);
+// int minsum = Int32.MaxValue;
+// int indexLine = 0;
+
+// for (int i = 0; i < numbers.GetLength(0); i++)
+// {
+// int sum = 0;
+// for (int j = 0; j < numbers.GetLength(1); j++)
+// {
+// sum = sum + numbers[i, j];        
+// }
+// if (sum < minsum)
+// {
+// minsum = sum;
+// indexLine++;
+// }
+// }
+
+// Console.WriteLine("строка с наименьшей суммой елементов: " + (indexLine) + ", с суммой елементов равной: " + (minsum));
+
+// void FillArrayRandomNumbers(int[,] array)
+// {
+// for (int i = 0; i < array.GetLength(0); i++)
+// {
+// for (int j = 0; j < array.GetLength(1); j++)
+// {
+// array[i, j] = new Random().Next(0, 10);
+// }
+// }
+// }
+
+// void PrintArray(int[,] array)
+// {
+// for (int i = 0; i < array.GetLength(0); i++)
+// {
+// Console.Write("[ ");
+// for (int j = 0; j < array.GetLength(1); j++)
+// {
+// Console.Write(array[i, j] + " ");
+// }
+// Console.Write("]");
+// Console.WriteLine("");
+// }
+// }
+
+
+// Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц. Например, даны 2 матрицы:
+
+// Console.Clear();
+// Console.WriteLine("Введите размеры матриц и диапазон случайных значений:");
+// int m = InputNumbers("Введите число строк 1-й матрицы: ");
+// int n = InputNumbers("Введите число столбцов 1-й матрицы: ");
+// int p = InputNumbers("Введите число столбцов 2-й матрицы: ");
+// int range = InputNumbers("Введите диапазон случайных чисел: от 1 до ");
+
+// int[,] firstMartrix = new int[m, n];
+// CreateArray(firstMartrix);
+// Console.WriteLine("Первая матрица:");
+// WriteArray(firstMartrix);
+
+// int[,] secomdMartrix = new int[n, p];
+// CreateArray(secomdMartrix);
+// Console.WriteLine("Вторая матрица:");
+// WriteArray(secomdMartrix);
+
+// int[,] resultMatrix = new int[m,p];
+
+// MultiplyMatrix(firstMartrix, secomdMartrix, resultMatrix);
+// Console.WriteLine("Произведение первой и второй матриц:");
+// WriteArray(resultMatrix);
+
+// void MultiplyMatrix(int[,] firstMartrix, int[,] secomdMartrix, int[,] resultMatrix)
+// {
+// for (int i = 0; i < resultMatrix.GetLength(0); i++)
+// {
+// for (int j = 0; j < resultMatrix.GetLength(1); j++)
+// {
+// int sum = 0;
+// for (int k = 0; k < firstMartrix.GetLength(1); k++)
+// {
+// sum += firstMartrix[i,k] * secomdMartrix[k,j];
+// }
+// resultMatrix[i,j] = sum;
+// }
+// }
+// }
+
+// int InputNumbers(string input)
+// {
+// Console.Write(input);
+// int output = Convert.ToInt32(Console.ReadLine());
+// return output;
+// }
+
+// void CreateArray(int[,] array)
+// {
+// for (int i = 0; i < array.GetLength(0); i++)
+// {
+// for (int j = 0; j < array.GetLength(1); j++)
+// {
+// array[i, j] = new Random().Next(range);
+// }
+// }
+// }
+
+// void WriteArray (int[,] array)
+// {
+// for (int i = 0; i < array.GetLength(0); i++)
+// {
+// for (int j = 0; j < array.GetLength(1); j++)
+// {
+// Console.Write(array[i,j] + " ");
+// }
+// Console.WriteLine();
+// }
+// }
+
+
+// Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. 
+// Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
+
+// Console.Clear();
+// Console.Write("Введите размеры массива через пробел: ");
+// string[] nums = Console.ReadLine().Split("", StringSplitOptions.RemoveEmptyEntries);
+// int[,,] array = GetArray(new int[] {int.Parse(nums[0]), int.Parse(nums[1]), int.Parse(nums[2])}, 10, 99);
+// PrintArray(array);
+
+// int[,,] GetArray(int[] sizes, int min, int max)
+// {
+//     int[,,] result =new int[sizes[0], sizes[1], sizes[2]];
+//     for (int i = 0; i < result.GetLength(0); i++);
+// {
+// for (int j = 0; j < result.GetLength(1); j++);
+// {
+//     int k=0;
+//     while(k<IAsyncResult.GetLength(2));
+// {
+// int element=new Random().Next(min, max + 1);
+// if(FindElement(result, element)) continue;
+// result[i, j, k] = element;
+// k++;
+// }
+// }
+// }
+// }
+// return result;
+
+// bool FindElement(int[,,] array, int element)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//        for (int j = 0; i < array.GetLength(1); j++)
+//         {
+//             for (int k = 0; i < array.GetLength(2); k++)
+//         }
+//     }
+// }
+// return false;
+
+// void PrintArray(int[,,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+// {
+//     for (int j = 0; i < array.GetLength(0); j++)
+// {
+//     for (int k = 0; i < array.GetLength(0); k++)
+// {
+//     Console.Write($"{array[i, j, k]} ({i},{j},{k})");
+// }
+// Console.WriteLine();
+// }
+// Console.WriteLine();
+// }
+// }
+
+
+// Напишите программу, которая заполнит спирально массив 4 на 4.
+
+// Console.WriteLine("Введите размер массива");
+// int size = Convert.ToInt32(Console.ReadLine());
+
+// int[,] nums = new int[size, size];
+
+// int num = 1;
+// int i = 0;
+// int j = 0;
+
+// while (num <= size * size)
+// {
+//     nums[i, j] = num;
+//     if (i <= j + 1 && i + j < size - 1)
+//         ++j;
+//     else if (i < j && i + j >= size - 1)
+//         ++i;
+//     else if (i >= j && i + j > size - 1)
+//         --j;
+//     else
+//         --i;
+//     ++num;
+// }
+
+// PrintArray(nums);
+
+// void PrintArray(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         Console.Write("[ ");
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write(array[i, j] + " ");
+//         }
+//         Console.Write("]");
+//         Console.WriteLine("");
+//     }
+// }
